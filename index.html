@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap"
+      rel="stylesheet"/>
+      <link rel="shortcut icon" href="\images\logo\Reservia.svg" type="image/x-icon">
+
+    <title>Reservia</title>
+  </head>
+
+  <body>
+    <div class="main_wrapper">
+    <header>
+      <div id="logo">
+        <img src="images/logo/Reservia.svg" alt="logo"/>
+      </div>
+
+      <nav>
+        <ul>
+          <li class="register"><a class="register" href="#">S'inscrire</a></li>
+          <li class="accomodation_nav"><a class="accomodation_nav" href="#accomodation">Hébergements</a></li>
+          <li class="activities_nav"><a class="activities_nav" href="#activities">Activités</a></li>
+        </ul> 
+      </nav>
+    </header>
+  
+    <div id="main">
+      <section class="search">
+        <div id="main_title">
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre ville ou en pleine nature</p>
+        </div>
+
+        <div id="search_bar">
+          <img class="map_marker_icon" src="/images/icones/svgs/solid/map-marker-alt.svg" alt="icone de marqueur" />
+          <form class="input_field" method="post" action="traitement.php">
+            <p>
+              
+              <input type="text" name="city" id="city" placeholder="Marseille, France"/>
+            </p>
+         </form>
+         <img class="search_icon" src="images/icones/svgs/solid/search.svg" alt="icone de recherche" />
+        </div>
+      </section>
+
+      <section id="filters">
+        <h2>Filtres</h2>
+
+        <div>
+          <i class="fas fa-info"></i>
+          <p id="info">Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+      </section>
+
+      <section id="popular">
+        <h1>Les plus populaires</h1>
+      </section>
+
+      <section id="accomodation">
+        <h1>Hébergements à Marseille</h1>
+      </section>
+
+      <section id="activities">
+        <h1>Activités à Marseille</h1>
+      </section>
+    </div>
+
+    <footer>
+      <div class="about"><strong>A propos</strong>
+      <ul class="about_list">
+        <li>Fonctionnement du site</li>
+        <li>Conditions générales de vente</li>
+        <li>Données et confidentialité</li>
+      </ul>
+    </div>
+
+    <div class="our_accomodation"><strong>Nos hébergements</strong>
+      <ul class="our_accomodation_list">
+        <li>Charte qualité</li>
+        <li>Soumettre votre hôtel</li>
+      </ul>
+    </div>
+
+    <div class="help"><strong>Assistance</strong>
+      <ul class="help_list">
+        <li>Centre d'aide</li>
+        <li>Nous contacter</li>
+      </ul>
+    </div>
+    </footer>
+  </div>
+  </body>
+</html>

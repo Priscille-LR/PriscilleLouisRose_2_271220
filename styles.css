@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  font-size: larger;
+  font-weight: bold;
+  color: black;
+}
+h2 {
+  font-size: medium;
+  color: #0065fc;
+}
+
+h3 {
+  font-size: medium;
+}
+
+p {
+  font-size: medium;
+}
+
+#topsection {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#register {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  padding: 0px;
+}
+
+.accomodation_menu {
+  width: 50%;
+  text-align: center;
+}
+.activities_menu {
+  width: 50%;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  background-color: #fff;
+  padding: 0 0px;
+}
+.nav-item {
+  color: #0065fc;
+  padding: 20px;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.nav-item:not(.is-active) {
+  color: black;
+  opacity: 1;
+  bottom: 0;
+}
+
+.span {
+  margin: 0px;
+}
+
+.nav-indicator {
+  display: flex;
+  position: absolute;
+  margin-top: 20px;
+  height: 2px;
+  background: #0065fc;
+  width: 50%;
+}
+
+.nav-indicator:not(.is-active) {
+  display: flex;
+  position: absolute;
+  margin-top: 20px;
+  height: 2px;
+  background: #f2f2f2;
+  width: 50%;
+}
+
+#main_title {
+  margin: auto;
+  padding: 20px;
+}
+
+#search_form {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.map_marker_icon {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-radius: 30 0 0 30px;
+}
+
+.search_icon {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  background-color: #0065fc;
+  border-radius: 15px;
+  padding: 50 px;
+}
+
+.input_field {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  height: 100%;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+footer li {
+  margin-top: 15px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: -16px; /* valeur négative pour retirer la marge de body ?*/
+  background-color: #f2f2f2;
+  min-height: 100px;
+}
