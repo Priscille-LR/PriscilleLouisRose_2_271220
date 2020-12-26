@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  font-size: larger;
+  font-weight: bold;
+  color: black;
+}
+h2 {
+  font-size: medium;
+  color: #0065fc;
+}
+
+h3 {
+  font-size: medium;
+}
+
+p {
+  font-size: medium;
+}
+
+#main_wrapper {
+    width: 1000px;
+    margin: auto;
+}
+
+/* header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+
+nav {
+    display: flex;
+    background-color: white;
+  }
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+}
+
+.register {
+  display: flex;
+  color: #0065fc;
+  font-size: medium;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.accomodation_nav {
+    color:black;
+    width: 50%;
+    text-align: center;
+    border-bottom: 3px solid  #f2f2f2;
+    text-decoration: none;
+  }
+  
+.activities_nav {
+    color: black;
+    width: 50%;
+    text-align: center;
+    border-bottom: 3px solid  #f2f2f2;
+    text-decoration: none;
+  }
+
+.accomodation_nav:hover {
+    color: #0065fc;
+    text-decoration: none;
+    border-bottom: 3px solid #0065fc;
+}
+
+.activities_nav:hover {
+    color: #0065fc;
+    text-decoration: none;
+    border-bottom: 3px solid #0065fc;
+}
+
+
+
+
+
+
+#main_title {
+  margin: auto;
+  padding: 20px;
+}
+
+#search_bar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.map_marker_icon {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-radius: 30 0 0 30px;
+}
+
+.search_icon {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  background-color: #0065fc;
+  border-radius: 15px;
+
+}
+
+.input_field {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  height: 100%;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: -16px; /* valeur négative pour retirer la marge de body ?*/
+  background-color: #f2f2f2;
+  min-height: 100px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+footer li {
+  margin-top: 15px;
+}
+.about {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.about_list {
+    padding: 0;
+}
+
+.our_accomodation {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.our_accomodation_list {
+    padding: 0;
+}
+
+.help {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.help_list {
+    padding: 0;
+}
+
