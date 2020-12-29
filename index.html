@@ -48,8 +48,10 @@
           </div>
 
           <div id="search_bar">
-            <i class="fas fa-map-marker-alt"></i>
-            <form class="input_field" method="post" action="traitement.php">
+            <div class="map_marker_icon">
+              <i class="fas fa-map-marker-alt fa-2x"></i>
+            </div>
+            <form class="input_field" method="post" action="#">
               <p>
                 <input
                   type="text"
@@ -59,29 +61,36 @@
                 />
               </p>
             </form>
-            <i class="fas fa-search"></i>
+            <div class="map_marker_icon"></div>
+              <i class="fas fa-search fa-2x"></i>
+            </div>
           </div>
         </section>
 
         <section id="filters">
           <h2>Filtres</h2>
+          <ul>
+            <i class="fas fa-money-bill-wave fa-1g"></i><li>Economique</li><a href="#"></a> 
+            <i class="fas fa-child fa-1g"></i><li>Familial</li><a href="#"></a>
+            <i class="fas fa-heart fa-1g"></i><li>Romantique</li><a href="#"></a>
+            <i class="fas fa-dog fa-1g"></i><li>Animaux autorisés</li><a href="#"></a>
+
+          </ul>
 
           <div class="info_alert">
             <div class="info_icon">
               <i class="fas fa-info"></i>
             </div>
-          </div>
-          <div class="info_alert_accomodation">
-            <p id="info">
-              Plus de 500 logements sont disponibles dans cette ville
-            </p>
+            <div class="info_alert_accomodation">
+              <p class="info">Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
           </div>
         </section>
 
-        <section id="popular">
-          <div>
+        <section class="popular">
+          <div class="most_popular">
             <h1>Les plus populaires</h1>
-            <i class="fas fa-chart-line"></i>
+            <i class="fas fa-chart-line fa-2x"></i>
           </div>
           <article class="card_etoile_du_matin">
             <a href="#">
@@ -92,7 +101,7 @@
                 />
               </div>
               <div class="etoile_du_matin_description">
-                <h2>Hôtel Le Soleil du Matin</h2>
+                <h3>Hôtel Le Soleil du Matin</h3>
                 <p>Nuit à partir de 128€</p>
               </div>
               <div class="stars">

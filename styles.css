@@ -8,13 +8,14 @@ body {
 }
 
 h1 {
-  font-size: larger;
+  font-size: x-large;
   font-weight: bold;
   color: black;
 }
+
 h2 {
-  font-size: medium;
-  color: #0065fc;
+  font-size: large;
+  color: black;
 }
 
 h3 {
@@ -98,12 +99,12 @@ nav ul {
   padding: 20px;
 }
 
-.map_marker_icon {
+.fa-search {
   display: flex;
   align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: #f2f2f2;
+  /* width: 50px;
+  height: 50px; */
+  background-color: #0065fc;
   border-radius: 30 0 0 30px;
 }
 
@@ -124,15 +125,43 @@ nav ul {
 }
 
 .info_icon {
-  widows: 1.5%;
+  width: 1.5%;
   border: 2px solid #f2f2f2;
-  border-radius: 10px;
+  border-radius: 20px;
+  padding: 5px;
+
+
 }
 
 .fa-info {
   color: #0065fc;
+  text-align: center;
 }
 
+.info_alert {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.info {
+    margin: 10px;
+}
+
+.most_popular {
+    display: flex;
+    margin: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-chart-line {
+    
+}
+
+.popular {
+    background-color: #f2f2f2;
+}
 footer {
   display: flex;
   flex-direction: column;
