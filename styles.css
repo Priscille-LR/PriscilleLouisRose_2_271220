@@ -25,84 +25,88 @@ p {
   font-size: medium;
 }
 
-#topsection {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
+#main_wrapper {
+    width: 1000px;
+    margin: auto;
+}
+
+/* header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
 }
 
 #logo {
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin: 40px;
 }
 
-#register {
-  display: flex;
-  align-items: center;
-}
+
+nav {
+    display: flex;
+    background-color: white;
+  }
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   width: 100%;
-  padding: 0px;
+  margin: 0;
 }
 
-.accomodation_menu {
-  width: 50%;
-  text-align: center;
-}
-.activities_menu {
-  width: 50%;
-  text-align: center;
-}
-
-.nav {
+.register {
   display: flex;
-  background-color: #fff;
-  padding: 0 0px;
-}
-.nav-item {
   color: #0065fc;
-  padding: 20px;
+  font-size: medium;
+  font-weight: bold;
   text-decoration: none;
-  margin: 0 6px;
 }
 
-.nav-item:not(.is-active) {
-  color: black;
-  opacity: 1;
-  bottom: 0;
+.accomodation_nav {
+    color:black;
+    width: 50%;
+    text-align: center;
+    border-bottom: 3px solid  #f2f2f2;
+    text-decoration: none;
+  }
+  
+.activities_nav {
+    color: black;
+    width: 50%;
+    text-align: center;
+    border-bottom: 3px solid  #f2f2f2;
+    text-decoration: none;
+  }
+
+.accomodation_nav:hover {
+    color: #0065fc;
+    text-decoration: none;
+    border-bottom: 3px solid #0065fc;
 }
 
-.span {
-  margin: 0px;
+.activities_nav:hover {
+    color: #0065fc;
+    text-decoration: none;
+    border-bottom: 3px solid #0065fc;
 }
 
-.nav-indicator {
-  display: flex;
-  position: absolute;
-  margin-top: 20px;
-  height: 2px;
-  background: #0065fc;
-  width: 50%;
-}
 
-.nav-indicator:not(.is-active) {
-  display: flex;
-  position: absolute;
-  margin-top: 20px;
-  height: 2px;
-  background: #f2f2f2;
-  width: 50%;
-}
+
+
+
 
 #main_title {
   margin: auto;
   padding: 20px;
 }
 
-#search_form {
+#search_bar {
   display: flex;
   align-items: center;
   padding: 20px;
@@ -124,7 +128,7 @@ nav ul {
   align-items: center;
   background-color: #0065fc;
   border-radius: 15px;
-  padding: 50 px;
+
 }
 
 .input_field {
@@ -134,14 +138,7 @@ nav ul {
   height: 100%;
 }
 
-footer ul {
-  list-style-type: none;
-  margin-top: 20px;
-}
 
-footer li {
-  margin-top: 15px;
-}
 footer {
   display: flex;
   flex-direction: column;
@@ -150,3 +147,40 @@ footer {
   background-color: #f2f2f2;
   min-height: 100px;
 }
+
+footer ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+footer li {
+  margin-top: 15px;
+}
+.about {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.about_list {
+    padding: 0;
+}
+
+.our_accomodation {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.our_accomodation_list {
+    padding: 0;
+}
+
+.help {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.help_list {
+    padding: 0;
+}
+
