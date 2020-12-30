@@ -59,7 +59,6 @@ nav {
     justify-content: center;
     align-items: center;
     color: black;
-    /* text-align: center; */
     text-decoration: none;
     border-bottom: 3px solid #f2f2f2;
     padding: 20px;
@@ -74,11 +73,11 @@ nav {
 }
 
 .register {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-   flex: 1;
-    order: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  order: 2;
   color: #0065fc;
   font-size: medium;
   font-weight: bold;
@@ -132,10 +131,6 @@ nav {
         align-items: center;
         margin: 20px;
     }
-
-
-
-
 
 }
 
@@ -227,47 +222,52 @@ nav {
 .popular {
     background-color: #f2f2f2;
 }
+
+
+
+/* footer */
+
 footer {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  margin: -16px; /* valeur négative pour retirer la marge de body ?*/
+  justify-content: space-around;
+  /* margin: -16px; valeur négative pour retirer la marge de body ? */
   background-color: #f2f2f2;
-  min-height: 100px;
+  /* min-height: 100px; */
+  padding: 40px;
 }
 
 footer ul {
   list-style-type: none;
   margin-top: 20px;
+  padding: 0;
 }
 
 footer li {
   margin-top: 15px;
 }
-.about {
-  margin-top: 50px;
-  margin-left: 50px;
+
+.footer_item {
+  padding-bottom: 30px;
 }
 
-.about_list {
-  padding: 0;
-}
+@media screen and (min-width: 800px) {
 
-.our_accomodation {
-  margin-top: 50px;
-  margin-left: 50px;
-}
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 
-.our_accomodation_list {
-  padding: 0;
-}
+  footer ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+  }
 
-.help {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-bottom: 50px;
-}
+  .footer_item {
+    padding-bottom: 0px;
+    flex: 1;
+  }
 
-.help_list {
-  padding: 0;
 }
