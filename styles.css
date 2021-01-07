@@ -259,50 +259,62 @@ button i {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex: 2; */
-  /* margin-left: px; */
+  margin: 10px;
 }
 
 .filters_items {
   display: flex;
   flex-wrap: wrap;
+  margin: 0px;
 }
 
-.filter_item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 2px solid #D9D9D9;
-  border-radius: 50px;
-  margin: 5px;
-
+.filters_item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
-
-
-.filters p {
-  font-family: "Raleway", sans-serif;
-  font-size: medium;
-  font-weight: bold;
-  color:black;
-  margin: 0px 20px;
-  text-decoration: none;
-}
-
-
-.filter_item i {
+.filters_item i {
   display: flex;
   justify-content: center;
   align-items: center;
   padding:10px;
   width: 30px;
   height: 30px;
-  text-decoration: none;
-  color: #0065fc;
+  color: #0065fc; 
+  border-radius: 30px;
+  background-color: #DEEBFF;
 }
 
-.filters a {
-  text-decoration: none;
+.filters_item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border: 2px solid #D9D9D9;
+  border-radius: 50px;
+  margin: 7px;
+  /* cursor: pointer; */
+  user-select: none;
+  font-weight: bold;
+}
+
+.filters_name {
+  padding: 0px 15px;
+}
+
+.filters_item input:checked + .filters_icon  {
+  background-color: #0065fc;
+  color: #DEEBFF;
+}
+
+
+@media screen and (min-width: 800px) {
+
+  .filters_item {
+    margin: 15px;
+  }
 }
 
 
@@ -328,19 +340,20 @@ button i {
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    margin: 30px 0px;  
+    margin: 30px 10px;  
 }
 
 .info_alert_accomodation {
   padding-left: 20px;
 }
 
-.filters span {
+.info_text{
+  display: flex;
+  flex-wrap: wrap ;
   font-weight: normal;
+  margin: 0px 20px;
 }
 
-@media screen and (min-width: 800px) {
-}
 
 
 /* popular */
@@ -489,6 +502,7 @@ display: flex;
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
+    margin: 0px 20px;
   }
   
 
@@ -555,7 +569,7 @@ display: flex;
 
   .popular_items{
     display: flex;
-flex-direction: column;
+    flex-direction: column;
   }
 
   .title {
@@ -598,9 +612,9 @@ flex-direction: column;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 5px solid white;
+  /* border: 5px solid white; */
   border-radius: 20px;
-  box-shadow: 5px 5px 5px #D9D9D9;
+  box-shadow: 5px 5px 15px #D9D9D9;
   text-decoration: none;
   /* margin: 10px; */
   height: 300px;
@@ -626,8 +640,57 @@ flex-direction: column;
 
 
 @media screen and (min-width: 800px) {
-}
 
+  .thumbnail_activities {
+    height: auto;
+  }
+
+  .thumbnail_content_activities { 
+    height: 50px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .activities_in_Marseille {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, 40px);
+    /* column-gap: 10px;
+    row-gap: 10px; */
+  }
+
+  .place {
+    margin: 0px;
+  }
+
+  .old_port {
+    grid-column: 1 / 2;
+    grid-row: 1 / 9;
+  }
+
+  .pomegues_fort {
+    grid-column: 2 / 3;
+    grid-row: 1 / 6;
+  }
+
+  .frioul_islands {
+    grid-column: 2 / 3;
+    grid-row: 6 / 9;
+  }
+
+  .calanques_national_park {
+    grid-column: 3 / 4;
+    grid-row: 1 / 9;
+  }
+
+  .Notre-Dame-de-la-Garde {
+    grid-column: 4 / 5;
+    grid-row: 1 / 5;
+  }
+
+  .longchamp_park {
+    grid-column: 4 / 5;
+    grid-row: 5 / 9;
+  }
 }
 /* footer */
 
@@ -638,7 +701,7 @@ footer {
   /* margin: -16px; valeur négative pour retirer la marge de body ? */
   background-color: #f2f2f2;
   /* min-height: 100px; */
-  padding: 40px;
+  padding: 30px;
 }
 
 footer a {
@@ -682,60 +745,3 @@ footer li {
 
 }
 
-
-.container {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  border: 2px solid #D9D9D9;
-  border-radius: 50px;
-  margin: 5px;
-  cursor: pointer;
-  user-select: none;
-  align-self: center;
-  padding-right: 15px;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-}
-
-/* Hide the browser's default checkbox */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-#filter_icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border: 1px;
-  border-radius: 50px;
-  background-color: white;
-  border-color: black;
-  margin-right: 10px;
-}
-
-.container input:checked + #filter_icon  {
-  background-color: #DEEBFF;
-  border: 1px;
-  border-color: black;
-}
-
-.fa-money-bill-wave{
-  color: #0065fc;
-}
-.fa-child{
-  color: #0065fc;
-}
-.fa-heart{
-  color: #0065fc;
-}
-.fa-dog{
-  color: #0065fc;
-}

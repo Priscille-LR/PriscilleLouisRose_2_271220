@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap"
@@ -14,6 +13,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" type="text/css" href="css/all.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Reservia</title>
   </head>
 
@@ -51,7 +51,7 @@
             </form>
             <button type="submit">
               <i class="fa fa-search fa-lg"></i>
-              <p class="search_text">Rechercher</p>
+              <span class="search_text">Rechercher</span>
             </button>
           </div>
         </section>
@@ -63,21 +63,32 @@
             </div>
 
             <div class="filters_items">
-              <label class="container">Économique
-                  <input type="checkbox" checked/>
-                  <i id="filter_icon" class="fas fa-money-bill-wave"></i>
+              <label class="filters_item"
+                ><span class="filters_name">Économique</span>
+                <input type="checkbox" name="économique" id="économique" />
+                <i class="fas fa-money-bill-wave filters_icon"></i>
               </label>
-              <label class="container">Familial
-                <input type="checkbox" />
-                <i id="filter_icon"  class="fas fa-child"></i>
+
+              <label class="filters_item"
+                ><span class="filters_name">Familial</span>
+                <input type="checkbox" name="familial" id="familial" />
+                <i class="fas fa-child filters_icon"></i>
               </label>
-              <label class="container">Romantique
-                <input type="checkbox" />
-                <i id="filter_icon"  class="fas fa-heart"></i>
+
+              <label class="filters_item"
+                ><span class="filters_name">Romantique</span>
+                <input type="checkbox" name="romantique" id="romantique" />
+                <i class="fas fa-heart filters_icon"></i>
               </label>
-              <label class="container">Romantique
-                <input type="checkbox" />
-                <i id="filter_icon"  class="fas fa-dog fa-1g"></i>
+
+              <label class="filters_item"
+                ><span class="filters_name">Animaux autorisés</span>
+                <input
+                  type="checkbox"
+                  name="animaux_autorisés"
+                  id="animaux_autorisés"
+                />
+                <i class="fas fa-dog filters_icon"></i>
               </label>
             </div>
             <div class="info_alert">
@@ -85,7 +96,7 @@
                 <i class="fas fa-info"></i>
               </div>
               <p>
-                <span
+                <span class="info_text"
                   >Plus de 500 logements sont disponibles dans cette ville</span
                 >
               </p>
@@ -100,82 +111,82 @@
               <i class="fas fa-chart-line fa-2x"></i>
             </div>
             <div class="popular_items">
-            <article>
-              <a class="thumbnail" href="#">
-                <img
-                  class="thumbnail_picture_popular"
-                  src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                  alt="photo Hotel Étoile du Matin"
-                />
-                <div class="thumbnail_content_popular">
-                  <div class="thumbnail_text">
-                    <h3 class="hotel_name">Hôtel Le Soleil du Matin</h3>
-                    <p class="price">Nuit à partir de 128€</p>
+              <article>
+                <a class="thumbnail" href="#">
+                  <img
+                    class="thumbnail_picture_popular"
+                    src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                    alt="photo Hotel Étoile du Matin"
+                  />
+                  <div class="thumbnail_content_popular">
+                    <div class="thumbnail_text">
+                      <h3 class="hotel_name">Hôtel Le Soleil du Matin</h3>
+                      <p class="price">Nuit à partir de 128€</p>
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
                   </div>
-                  <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                  </div>
-                </div>
-              </a>
-            </article>
+                </a>
+              </article>
 
-            <article>
-              <a class="thumbnail" href="#">
-                <img
-                  class="thumbnail_picture_popular"
-                  src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                  alt="photo Chambres d'Hôtes Au Coeur de l'Eau"
-                />
+              <article>
+                <a class="thumbnail" href="#">
+                  <img
+                    class="thumbnail_picture_popular"
+                    src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                    alt="photo Chambres d'Hôtes Au Coeur de l'Eau"
+                  />
 
-                <div class="thumbnail_content_popular">
-                  <div class="thumbnail_text">
-                    <h3 class="hotel_name">
-                      Au Coeur de l'Eau Chambres d'Hôtes
-                    </h3>
-                    <p class="price">Nuit à partir de 71€</p>
+                  <div class="thumbnail_content_popular">
+                    <div class="thumbnail_text">
+                      <h3 class="hotel_name">
+                        Au Coeur de l'Eau Chambres d'Hôtes
+                      </h3>
+                      <p class="price">Nuit à partir de 71€</p>
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star" style="color: #d9d9d9"></i>
+                    </div>
                   </div>
-                  <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star" style="color: #d9d9d9"></i>
-                  </div>
-                </div>
-              </a>
-            </article>
+                </a>
+              </article>
 
-            <article>
-              <a class="thumbnail" href="#">
-                <img
-                  class="thumbnail_picture_popular"
-                  src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                  alt="photo Hotel Tout Bleu et Blanc"
-                />
-                <div class="thumbnail_content_popular">
-                  <div class="thumbnail_text">
-                    <h3 class="hotel_name">Hotel Tout Bleu et Blanc</h3>
-                    <p class="price">Nuit à partir de 68€</p>
+              <article>
+                <a class="thumbnail" href="#">
+                  <img
+                    class="thumbnail_picture_popular"
+                    src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                    alt="photo Hotel Tout Bleu et Blanc"
+                  />
+                  <div class="thumbnail_content_popular">
+                    <div class="thumbnail_text">
+                      <h3 class="hotel_name">Hotel Tout Bleu et Blanc</h3>
+                      <p class="price">Nuit à partir de 68€</p>
+                    </div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star" style="color: #d9d9d9"></i>
+                    </div>
                   </div>
-                  <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star" style="color: #d9d9d9"></i>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </div>
+                </a>
+              </article>
+            </div>
           </section>
 
           <section id="accomodation_main">
-            <div class=title>
+            <div class="title">
               <h1 class="section_title">Hébergements à Marseille</h1>
             </div>
 
@@ -336,7 +347,7 @@
           <h1 class="section_title">Activités à Marseille</h1>
 
           <div class="activities_in_Marseille">
-            <article>
+            <article class="old_port">
               <a class="thumbnail_activities" href="#">
                 <img
                   class="thumbnail_picture_activities"
@@ -345,12 +356,12 @@
                 />
 
                 <div class="thumbnail_content_activities">
-                  <h3 class="place">Hotel du Port</h3>
+                  <h3 class="place">Vieux Port</h3>
                 </div>
               </a>
             </article>
 
-            <article>
+            <article class="pomegues_fort">
               <a class="thumbnail_activities" href="#">
                 <img
                   class="thumbnail_picture_activities"
@@ -364,7 +375,7 @@
               </a>
             </article>
 
-            <article>
+            <article class="frioul_islands">
               <a class="thumbnail_activities" href="#">
                 <img
                   class="thumbnail_picture_activities"
@@ -378,7 +389,7 @@
               </a>
             </article>
 
-            <article>
+            <article class="calanques_national_park">
               <a class="thumbnail_activities" href="#">
                 <img
                   class="thumbnail_picture_activities"
@@ -392,7 +403,7 @@
               </a>
             </article>
 
-            <article>
+            <article class="Notre-Dame-de-la-Garde">
               <a class="thumbnail_activities" href="#">
                 <img
                   class="thumbnail_picture_activities"
@@ -406,7 +417,7 @@
               </a>
             </article>
 
-            <article>
+            <article class="longchamp_park">
               <a class="thumbnail_activities" href="#">
                 <img
                   class="thumbnail_picture_activities"
