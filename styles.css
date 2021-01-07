@@ -474,11 +474,11 @@ display: flex;
 
 
 .hotel_name {
-  margin: 2.5px 0px;
+  margin: 10px 0px;
 }
 
 .price {
-  margin: 2.5px 0px;
+  margin: 5px 0px;
 }
 
 .rating {
