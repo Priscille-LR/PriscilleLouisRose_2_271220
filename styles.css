@@ -35,14 +35,10 @@ p {
 }
 
 .main_wrapper {
-  max-width: 2000px;
+  max-width: 1400px;
   margin: auto;
 }
 
-.footer_wrapper {
-  max-width: 2000px;
-  margin: auto;
-}
 
 /* header*/
 header {
@@ -100,8 +96,6 @@ nav {
         display: flex;
         align-items: center;
         width: 100%;
-        /* justify-content: space-between;   */
-        /* margin: 40px; */
       }
 
       nav {
@@ -114,10 +108,6 @@ nav {
       }
 
       .nav_item {
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* text-align: center; */
         border-top: 3px solid #f2f2f2;
         border-bottom: 3px solid white;
         padding: 30px;
@@ -169,9 +159,6 @@ nav {
 }
 
 .input_field {
-  /* display: flex;
-  align-content: center; */
-  /* justify-content: space-between; */
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -236,10 +223,9 @@ button i {
     display: block;
     margin-right: 15px;
   }
-
-  
   
 }
+
 
 /*filters*/
 
@@ -263,12 +249,12 @@ button i {
   margin: 0px 20px;
 }
 
-.filters_item input {
+input[type="checkbox"] {
   position: absolute;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
   opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
 }
 
 .filters_item i {
@@ -281,7 +267,7 @@ button i {
   color: #0065fc; 
   border-radius: 30px;
   /* border: 2px solid #DEEBFF; */
-  /* background-color: #DEEBFF; */
+  background-color: #DEEBFF;
 }
 
 .filters_item {
@@ -299,16 +285,29 @@ button i {
   padding: 0px 15px;
 }
 
-.filters_item:hover i {
+/* .filters_item:hover i {
   background-color: #DEEBFF;
   color: #0065fc;
+} */
+
+.filters_items input:checked + label {
+  color: #0065fc;
+  background-color: #DEEBFF;
+  border: 2px solid #0065fc;
 }
 
-.filters_item input:checked + .filters_icon  {
+.filters_items input:checked + label i { 
+  color:#DEEBFF;
   background-color: #0065fc;
-  color: #DEEBFF;
 }
 
+.grow {
+  transition: all .2s ease-in-out; 
+}
+
+.grow:hover {
+  transform: scale(1.1); 
+}
 
 @media screen and (min-width: 800px) {
 
@@ -369,11 +368,11 @@ button i {
   padding: 40px 20px;
 }
 
-.popular_title {
+.popular_main_title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0px 10px;
 }
 
 article {
@@ -381,7 +380,7 @@ article {
   /* justify-content: space-around; */
 }
 
-.thumbnail {
+.thumbnail_popular {
   display: flex;
   justify-content: space-between;
   border: 5px solid white;
@@ -389,14 +388,14 @@ article {
   box-shadow: 5px 5px 5px #D9D9D9;
   text-decoration: none;
   margin: 10px;
-  height: 200px;
+  height: 140px;
   width: 100%;
 }
 
 .thumbnail_picture_popular {
   display: flex;
-  max-width: 40%; 
-  height: auto;
+  width: 40%; 
+  height: 100%;
   object-fit: cover; 
   border-radius: 20px 0px 0px 20px;
 }
@@ -433,13 +432,13 @@ display: flex;
 .thumbnail_accomodation {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   border: 5px solid white;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #D9D9D9;
   text-decoration: none;
-  margin: 10px;
-  height: 250px;
+  margin: 15px;
+  max-height: 210px;
   width: 100%;
 }
 
@@ -447,6 +446,7 @@ display: flex;
   display: flex;
   width: 100%; 
   height: 60%;
+  /* height: 150px; */
   object-fit: cover; 
   border-radius: 20px 20px 0px 0px;
 }
@@ -454,16 +454,16 @@ display: flex;
 .thumbnail_content_accomodation {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: auto; 
   height: 40%;
   background-color: white;
-  padding-left: 10px;
+  padding: 10px;
   overflow: hidden;
 }
 
 .hotel_name {
-  margin: 10px 0px;
+  margin: 5px 0px;
 }
 
 .price {
@@ -485,6 +485,48 @@ display: flex;
 
 @media screen and (min-width: 800px) {
 
+  .popular_accomodation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .popular {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 0px;
+    border-radius: 20px;
+    width: auto;
+    margin: 30px;
+    }
+
+    .popular_items {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .article_popular {
+      width: 33.3%;
+    }
+
+    #accomodation_main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #f2f2f2;
+      border: 0px;
+      border-radius: 20px;
+      width: auto;
+      padding: 20px;
+      margin: 30px;
+    }
+  
+}
+
+@media screen and (min-width: 1010px) {
+
   #accomodation_main {
     display: flex;
     flex-direction: column;
@@ -493,17 +535,23 @@ display: flex;
     border: 0px;
     border-radius: 20px;
     width: 70%;
-    margin-right: 15px;
-    margin-left: 30px;
-    /* margin: 10px; */
+    padding: 20px;
+    height: auto;
+    margin: 0px 15px 0px 30px;
     }
 
-  
+  /* .thumbnail {
+    margin-bottom: 15px;
+    height: 140px;
+  } */
 
   .popular_accomodation {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
+    align-items: stretch;
     width: 100%;
+    height: auto;
     /* margin: 0px 20px; */
   }
 
@@ -514,18 +562,22 @@ display: flex;
     border: 0px;
     border-radius: 20px;
     width: 30%;
-    margin-right: 30px;
-    margin-left: 15px;
+    height: auto;
+    margin: 0px 30px 0px 15px;
     }
 
-  .accomodation {
+    .article_popular {
+      width: 100%;
+    } 
+
+    .accomodation {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
     width: 100%;
-    height: 80%;
+    height: 100%;
   }  
 
   .article_accomodation {
@@ -543,7 +595,10 @@ display: flex;
   box-shadow: 5px 5px 5px #D9D9D9;
   text-decoration: none;
   margin: 10px;
-  height: auto;
+  }
+
+  .thumbnail_picture_accomodation {
+    height: 60%;
   }
 
   .thumbnail_content_accomodation {
@@ -552,8 +607,7 @@ display: flex;
     height: 40%;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
-    padding-left: 10px;
+    padding: 0px 10px;
     overflow: hidden;
   }
 
@@ -562,13 +616,33 @@ display: flex;
     flex-direction: column;
   }
 
+  .popular_main_title {
+    margin: 15px;
+}
+
+  .popular_title {
+    margin: 0px;
+  }
+
   .title {
     display: flex;
     height: min-content;
   }
 
+  .hotel_name {
+    margin: 2px 0px;
+  }
+  
+  .price {
+    margin: 2px 0px;
+  }
+
+  .rating {
+    margin: 3px 0px;
+  }
+
   .more {
-    margin: 10px;
+    margin: 0px 10px;
     display: flex;
     height: min-content;
   }
@@ -579,7 +653,7 @@ display: flex;
     align-content: space-between;
   }
   
-}
+} 
   
 
 /*activities*/
@@ -604,7 +678,7 @@ display: flex;
   border-radius: 20px;
   box-shadow: 5px 5px 15px #D9D9D9;
   text-decoration: none;
-  height: 300px;
+  height: 220px;
   width: 100%;
   margin: 10px;
 }
@@ -612,7 +686,7 @@ display: flex;
 .thumbnail_picture_activities {
   display: flex;
   width: 100%; 
-  height: 80%;
+  height: 70%;
   object-fit: cover; 
   border-radius: 20px 20px 0px 0px;
 }
@@ -622,7 +696,7 @@ display: flex;
   align-items: center;
   padding-left: 20px;
   width: 100%; 
-  height: 20%;
+  height: 30%;
 }
 
 
@@ -636,8 +710,6 @@ display: flex;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(10, 40px);
-    /* column-gap: 10px;
-    row-gap: 10px; */
   }
 
   .place {
@@ -700,13 +772,17 @@ display: flex;
 /* footer */
 
 footer {
+  background-color: #f2f2f2;
+  align-items: center;
+}
+
+.footer_main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* margin: -16px; valeur négative pour retirer la marge de body ? */
   background-color: #f2f2f2;
-  /* min-height: 100px; */
   padding: 30px;
+  margin: auto;
 }
 
 footer a {
@@ -731,21 +807,25 @@ footer li {
 
 @media screen and (min-width: 800px) {
 
-  footer {
+  .footer_main {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    max-width: 1400px; 
+    width: 100%;
+    padding: 0px;
   }
 
   footer ul {
     list-style-type: none;
     margin-top: 20px;
-    padding: 0;
+    padding: 0px;
   }
 
   .footer_item {
-    padding-bottom: 0px;
-    flex: 1;
+    padding: 30px;
+    /* padding-bottom: 0px; */
+    /* flex: 1; */
   }
 
 }

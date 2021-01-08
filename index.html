@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap"
@@ -12,7 +13,7 @@
       href="images/logo/Reservia.svg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" type="text/css" href="css/all.css" />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <title>Reservia</title>
   </head>
@@ -20,8 +21,7 @@
   <body>
     <div class="main_wrapper">
       <header>
-        <img class="logo" src="images/logo/Reservia.svg" alt="logo" />
-        <!-- <div class="space"></div> -->
+        <a class="link_logo" href="#"><img class="logo" src="images/logo/Reservia.svg" alt="logo" /></a>
         <nav>
           <a class="nav_item" href="#accomodation_main">Hébergements</a>
           <a class="nav_item" href="#activities">Activités</a>
@@ -64,34 +64,37 @@
             </div>
 
             <div class="filters_items">
-
-              <label class="filters_item">
+              <div class="grow">
+              <input type="checkbox" name="économique" id="economique" />
+              <label class="filters_item" for="economique">
                 <span class="filters_name">Économique</span>
-                <input type="checkbox" name="économique" id="économique" />
                 <i class="fas fa-money-bill-wave filters_icon"></i>
               </label>
+              </div>
 
-              <label class="filters_item">
+              <div class="grow">
+              <input type="checkbox" name="familial" id="familial" />
+              <label class="filters_item" for="familial">
                 <span class="filters_name">Familial</span>
-                <input type="checkbox" name="familial" id="familial" />
                 <i class="fas fa-child filters_icon"></i>
               </label>
+              </div>
 
-              <label class="filters_item">
+              <div class="grow">
+              <input type="checkbox" name="romantique" id="romantique" />
+              <label class="filters_item" for="romantique">
                 <span class="filters_name">Romantique</span>
-                <input type="checkbox" name="romantique" id="romantique" />
                 <i class="fas fa-heart filters_icon"></i>
               </label>
+              </div>
 
-              <label class="filters_item">
+              <div class="grow">
+                <input type="checkbox" name="animaux_autorisés" id="animaux_autorises"/>
+              <label class="filters_item" for="animaux_autorises">
                 <span class="filters_name">Animaux autorisés</span>
-                <input
-                  type="checkbox"
-                  name="animaux_autorisés"
-                  id="animaux_autorisés"
-                />
                 <i class="fas fa-dog filters_icon"></i>
               </label>
+              </div>
             </div>
           </div>
           <div class="info_alert">
@@ -108,13 +111,13 @@
 
         <div class="popular_accomodation">
           <section class="popular">
-            <div class="popular_title">
-              <h1>Les plus populaires</h1>
+            <div class="popular_main_title">
+              <h1 class="popular_title">Les plus populaires</h1>
               <i class="fas fa-chart-line fa-2x"></i>
             </div>
             <div class="popular_items">
-              <article>
-                <a class="thumbnail" href="#">
+              <article class="article_popular">
+                <a class="thumbnail_popular" href="#">
                   <img
                     class="thumbnail_picture_popular"
                     src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -136,8 +139,8 @@
                 </a>
               </article>
 
-              <article>
-                <a class="thumbnail" href="#">
+              <article class="article_popular">
+                <a class="thumbnail_popular" href="#">
                   <img
                     class="thumbnail_picture_popular"
                     src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
@@ -162,8 +165,8 @@
                 </a>
               </article>
 
-              <article>
-                <a class="thumbnail" href="#">
+              <article class="article_popular">
+                <a class="thumbnail_popular" href="#">
                   <img
                     class="thumbnail_picture_popular"
                     src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
@@ -434,11 +437,9 @@
         </section>
       </div>
     </div>
-
-    <!-- footer -->
-    <div class="footer_wrapper">
       <footer>
-        <div class="footer_item">
+        <div class="footer_main">
+          <div class="footer_item">
           <a href="#"
             ><strong>A propos</strong>
             <ul>
@@ -468,7 +469,7 @@
             </ul>
           </a>
         </div>
+      </div>
       </footer>
-    </div>
   </body>
 </html>
