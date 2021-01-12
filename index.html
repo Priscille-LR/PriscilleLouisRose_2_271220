@@ -64,37 +64,33 @@
 
             <div class="filters_items">
               <div class="grow">
-              <label class="filters_item">
+              <input type="checkbox" name="économique" id="economique" />
+              <label class="filters_item" for="economique">
                 <span class="filters_name">Économique</span>
-                <input type="checkbox" name="économique" id="économique" />
                 <i class="fas fa-money-bill-wave filters_icon"></i>
               </label>
               </div>
 
               <div class="grow">
-              <label class="filters_item">
+              <input type="checkbox" name="familial" id="familial" />
+              <label class="filters_item" for="familial">
                 <span class="filters_name">Familial</span>
-                <input type="checkbox" name="familial" id="familial" />
                 <i class="fas fa-child filters_icon"></i>
               </label>
               </div>
 
               <div class="grow">
-              <label class="filters_item">
+              <input type="checkbox" name="romantique" id="romantique" />
+              <label class="filters_item" for="romantique">
                 <span class="filters_name">Romantique</span>
-                <input type="checkbox" name="romantique" id="romantique" />
                 <i class="fas fa-heart filters_icon"></i>
               </label>
               </div>
 
               <div class="grow">
-              <label class="filters_item">
+                <input type="checkbox" name="animaux_autorisés" id="animaux_autorises"/>
+              <label class="filters_item" for="animaux_autorises">
                 <span class="filters_name">Animaux autorisés</span>
-                <input
-                  type="checkbox"
-                  name="animaux_autorisés"
-                  id="animaux_autorisés"
-                />
                 <i class="fas fa-dog filters_icon"></i>
               </label>
               </div>
@@ -119,7 +115,7 @@
               <i class="fas fa-chart-line fa-2x"></i>
             </div>
             <div class="popular_items">
-              <article>
+              <article class="article_popular">
                 <a class="thumbnail" href="#">
                   <img
                     class="thumbnail_picture_popular"
@@ -142,7 +138,7 @@
                 </a>
               </article>
 
-              <article>
+              <article class="article_popular">
                 <a class="thumbnail" href="#">
                   <img
                     class="thumbnail_picture_popular"
@@ -168,7 +164,7 @@
                 </a>
               </article>
 
-              <article>
+              <article class="article_popular">
                 <a class="thumbnail" href="#">
                   <img
                     class="thumbnail_picture_popular"
@@ -440,9 +436,6 @@
         </section>
       </div>
     </div>
-
-    <!-- footer -->
-    <div class="footer_wrapper">
       <footer>
         <div class="footer_item">
           <a href="#"
@@ -475,6 +468,5 @@
           </a>
         </div>
       </footer>
-    </div>
   </body>
 </html>
