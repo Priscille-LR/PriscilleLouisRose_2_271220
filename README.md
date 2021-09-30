@@ -9,4 +9,4 @@ Reservia est un site web de réservation de logement en ligne. L'objectif est de
 //TODO
 
 # Link
-https://priscille-lr.github.io/Project2_Reservia/
+https://priscille-lr.github.io/PriscilleLouisRose_2_271220/
